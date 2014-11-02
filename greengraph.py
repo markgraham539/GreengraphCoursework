@@ -1,6 +1,5 @@
 ### "geolocation"
 import googleMapsLib 
-
 london_location=googleMapsLib.geolocate("London")
 print london_location
 
@@ -11,15 +10,9 @@ print url
 
 ### "png"
 import pngLib
-
-
 print pngLib.count_green_in_png(googleMapsLib.map_at(*london_location))
 
 ### "visualise"
-
-
-
-
 import miscLib
 ### "points"
 [pngLib.count_green_in_png(googleMapsLib.map_at(*location,zoom=10,satellite=True))
