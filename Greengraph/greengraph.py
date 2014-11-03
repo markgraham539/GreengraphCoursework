@@ -10,8 +10,7 @@ def greengraphMain(start,end):
   [pngLib.count_green_in_png(googleMapsLib.map_at(*location,zoom=10,satellite=True))
               for location in miscLib.location_sequence(
                   googleMapsLib.geolocate(start),
-                  googleMapsLib.geolocate(end),
-                  10)]
+                  googleMapsLib.geolocate(end),10)]
 
   #Code for displaying green map of a png
   '''
